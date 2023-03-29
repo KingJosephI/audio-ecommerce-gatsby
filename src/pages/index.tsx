@@ -2,9 +2,7 @@ import * as React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { Box, Button, ListItem, Stack, Typography } from "@mui/material";
-
 import MenuIcon from "@mui/icons-material/Menu";
-import "../styles/global.scss";
 import Layout from "../common/Layout/Layout";
 
 export default function Homepage() {

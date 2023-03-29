@@ -1,11 +1,5 @@
-// Colors
-$black: #000;
-$black: #101010;
-$white: #fff;
-$orange: #D87D4A;
-$orange-light: #fbaf85;
-$gray: #F1F1F1;
-$gray-light: #FAFAFA;
+@use '../../../styles/global' as *;
+@use '../../../styles/variables' as *;
 
 
 .footer {
@@ -112,7 +106,8 @@ $gray-light: #FAFAFA;
   }
 
 
-  @media screen and (width >=900px) {
+  @media screen and (width >=1024px) {
+    padding-inline: 165px;
     grid-template-rows: repeat(4, 1fr);
 
     &__logoContainer {

@@ -5,7 +5,6 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import { Box, Stack, Typography } from "@mui/material";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
-import "../../styles/global.scss";
 import * as styles from "./Footer.module.scss";
 
 export default function Footer() {
@@ -15,7 +14,7 @@ export default function Footer() {
       <Box className={styles.footer__logoContainer}>
         <StaticImage
           className={styles.footer__logo}
-          src="../../assets/shared/desktop/logo.svg"
+          src="../../../assets/shared/desktop/logo.svg"
           alt="logo"
         />
       </Box>
