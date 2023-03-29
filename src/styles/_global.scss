@@ -14,11 +14,18 @@ a, input, select, option {
   font-family: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
- 
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+

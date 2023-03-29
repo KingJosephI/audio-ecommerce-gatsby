@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import { Box, Button, ListItem, Stack, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Layout from "../common/Layout/Layout";
+import AudioGearSection from "../common/AudioGearSection/AudioGearSection";
 
 export default function Homepage() {
   return (
@@ -94,28 +95,7 @@ export default function Homepage() {
           </Box>
         </Stack>
 
-        <Stack>
-          <Box>
-            <StaticImage
-              src="../assets/shared/desktop/image-best-gear.jpg"
-              alt=""
-            />
-          </Box>
-          <Box>
-            <Typography component="h2">
-              Bringing you the best audio gear
-            </Typography>
-            <Typography component="p">
-              Located at the heart of New York City, Audiophile is the premier
-              store for high end headphones, earphones, speakers, and audio
-              accessories. We have a large showroom and luxury demonstration
-              rooms available for you to browse and experience a wide range of
-              our products. Stop by our store to meet some of the fantastic
-              people who make Audiophile the best place to buy your portable
-              audio equipment.
-            </Typography>
-          </Box>
-        </Stack>
+        <AudioGearSection />
       </Stack>
     </Layout>
   );

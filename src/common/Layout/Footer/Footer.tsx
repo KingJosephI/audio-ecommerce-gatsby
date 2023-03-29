@@ -13,7 +13,7 @@ export default function Footer() {
       <span className={styles.footer__topLine}></span>
       <Box className={styles.footer__logoContainer}>
         <StaticImage
-          className={styles.footer__logo}
+          // className={styles.footer__logo}
           src="../../../assets/shared/desktop/logo.svg"
           alt="logo"
         />

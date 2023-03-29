@@ -1,5 +1,6 @@
 @use '../../../styles/global' as *;
 @use '../../../styles/variables' as *;
+@use '../../../styles/fonts' as *;
 
 
 .footer {
@@ -8,7 +9,7 @@
   justify-items: center;
   gap: 48px;
   padding-block-end: 38px;
-  padding-inline: 26px;
+  // padding-inline: 26px;
   background-color: $black;
   color: $white;
   text-align: center;
@@ -46,6 +47,7 @@
       font-size: 13px;
       line-height: 25px;
       letter-spacing: 2px;
+      font-family: 'Manrope', sans-serif;
 
       &:hover {
         color: $orange;
@@ -62,12 +64,17 @@
     }
   }
 
-  @media screen and (width >=768px) {
+}
+
+
+@media screen and (width >=768px) {
+  .footer {
     justify-items: start;
     text-align: left;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5, 1fr);
     gap: 32px;
+    // padding-inline: 40px;
 
     &__topLine {
       grid-column: 1/2;
@@ -104,9 +111,11 @@
       justify-self: end;
     }
   }
+}
 
 
-  @media screen and (width >=1024px) {
+@media screen and (width >=1024px) {
+  .footer{
     padding-inline: 165px;
     grid-template-rows: repeat(4, 1fr);
 
