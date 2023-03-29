@@ -6,6 +6,8 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import MenuIcon from "@mui/icons-material/Menu";
+import "../styles/global.scss";
+import * as styles from "../styles/Homepage.module.scss";
 
 export default function Homepage() {
   return (
@@ -13,6 +15,7 @@ export default function Homepage() {
       <Box component="header">
         <Box component="nav">
           <MenuIcon />
+          <StaticImage src="../assets/shared/desktop/logo.svg" alt="" />
           <Box component="ul">
             <ListItem component="li">
               <Link to="/">Home</Link>
@@ -118,38 +121,53 @@ export default function Homepage() {
           </Box>
         </Stack>
       </Stack>
-      <Box component="footer" className="footer">
-        <Box className="footer__logo-container">
-          <StaticImage src="../assets/shared/desktop/logo.svg" alt="logo" />
+      <Box component="footer" className={styles.footer}>
+        <span className={styles.footer__topLine}></span>
+        <Box className={styles.footer__logoContainer}>
+          <StaticImage
+            className={styles.footer__logo}
+            src="../assets/shared/desktop/logo.svg"
+            alt="logo"
+          />
         </Box>
-        <Stack component="ul">
-          <ListItem component="li">
+        <Stack component="ul" className={styles.footer__links}>
+          <Typography component="li" className={styles.footer__linksItem}>
             <Link to="/">Home</Link>
-          </ListItem>
-          <ListItem component="li">
+          </Typography>
+          <Typography component="li" className={styles.footer__linksItem}>
             <Link to="/speakers">Speakers</Link>
-          </ListItem>
-          <ListItem component="li">
+          </Typography>
+          <Typography component="li" className={styles.footer__linksItem}>
             <Link to="/headphones">Headphones</Link>
-          </ListItem>
-          <ListItem component="li">
+          </Typography>
+          <Typography component="li" className={styles.footer__linksItem}>
             <Link to="/earphones">Earphones</Link>
-          </ListItem>
+          </Typography>
         </Stack>
-        <Typography component="p">
+        <Typography component="p" className={styles.footer__description}>
           Audiophile is an all in one stop to fulfill your audio needs. We're a
           small team of music lovers and sound specialists who are devoted to
           helping you get the most out of personal audio. Come and visit our
           demo facility - we’re open 7 days a week.
         </Typography>
-        <Typography component="small">
+        <Typography component="small" className={styles.footer__copyright}>
           Copyright 2021. All Rights Reserved
         </Typography>
-        <Box>
-          <FacebookIcon />
-          <TwitterIcon />
-          <InstagramIcon />
-        </Box>
+        <Stack
+          className={styles.footer__socialIcons}
+          direction="row"
+          spacing={2}
+        >
+          <Link to="#">
+            <FacebookIcon className={styles.footer__icon} />
+          </Link>
+          <Link to="#">
+            <TwitterIcon className={styles.footer__icon} />
+          </Link>
+          <Link to="#">
+            <InstagramIcon className={styles.footer__icon} />
+          </Link>
+        </Stack>
       </Box>
     </Box>
   );
