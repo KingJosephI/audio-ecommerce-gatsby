@@ -12,18 +12,14 @@
     justify-content: space-between;
     color: $white;
     padding: 32px 24px;
-    width: 100%;
+    
   }
 
   &__menu {
     display: none;
   }
 
-  &__menuItem {
-    &_text {
-      color: $white;
-    }
-  }
+  
 
 
 }
@@ -32,18 +28,65 @@
 
 .header {
   background: url('../../../assets/home/mobile/image-header.jpg');
+  
   nav {
-    display: block;
-    padding-inline: 165px;
+    display: flex;
+    padding-inline: 40px;
+    justify-content: start;
   }
 
   &__logo {
-    margin-left: 20px;
+    margin-left: 42px;
   }
 
   &__cart {
-    display: inline-block;
-    margin-left: 100%;
+    margin-left: auto;
   }
+  }
+}
+
+@media screen and (width >=1024px) {
+.header {
+    background: url('../../../assets/home/mobile/image-header.jpg');
+
+    nav {
+      // display: flex;
+      padding-inline: 165px;
+      justify-content: space-between;
+    }
+
+    &__hamburger {
+      display: none;
+    }
+
+    &__logo {
+      margin-left:0;
+    }
+
+    &__menu {
+      display: flex;
+      gap: 34px;
+      text-transform: uppercase;
+      // margin: 0 auto;
+    }
+
+    &__cart {
+      margin-left: 0;
+    }
+
+        &__menuItem {
+          &_text {
+            font-family: "Manrope", sans-serif;
+            font-size: 13px;
+            line-height: 25px;
+            letter-spacing: 2px;
+            font-weight: 700;
+            color: $white;
+
+            &:hover {
+              color: $orange;
+            }
+          }
+        }
   }
 }

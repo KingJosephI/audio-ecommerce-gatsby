@@ -10,9 +10,9 @@ export default function Header() {
     <Box component="header" className={styles.header}>
       <Box component="nav">
         <MenuIcon className={styles.header__hamburger} />
-        <Box>
+        <Box className={styles.header__logo}>
           <StaticImage
-            className={styles.header__logo}
+            // className={styles.header__logo}
             src="../../../assets/shared/desktop/logo.svg"
             alt="logo"
           />
@@ -39,11 +39,10 @@ export default function Header() {
             </Link>
           </Typography>
         </Box>
-        <Box>
+        <Box className={styles.header__cart}>
           <StaticImage
             src="../../../assets/shared/desktop/icon-cart.svg"
             alt="cart icon"
-            className={styles.header__cart}
           />
         </Box>
       </Box>
