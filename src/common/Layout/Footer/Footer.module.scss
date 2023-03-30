@@ -1,6 +1,3 @@
-// @use '../../../styles/global' as *;
-// @use '../../../styles/variables' as *;
-// @use '../../../styles/fonts' as *;
 @use "../../../styles/base/" as *;
 
 
@@ -10,7 +7,7 @@
   justify-items: center;
   gap: 48px;
   padding-block-end: 38px;
-  // padding-inline: 26px;
+  padding-inline: 24px;
   background-color: $black;
   color: $white;
   text-align: center;

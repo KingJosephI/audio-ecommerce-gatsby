@@ -2,18 +2,17 @@
 
 .hero {
     padding-inline: 24px;
-    // background-color: $black;
+    background-color: $blackish;
     color: $white;
     text-align: center;
     padding: 180px 24px;
-    // padding-block: 180px;
+   
     margin-block-end: 40px;
     background: url('../../assets/home/mobile/image-header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top -170px center;
-    // background-attachment: local;
-    // width: 100%;
+ 
 
     & > * {
         font-family: "Manrope", sans-serif;
@@ -60,11 +59,31 @@
 @media screen and (width >= 768px) {
     .hero {
         background: url('../../assets/home/tablet/image-header.jpg');
-        background-position: top center;
+        // background-position:  center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top -170px center;
     }
 }
 @media screen and (width >= 1024px) {
     .hero {
         background: url('../../assets/home/desktop/image-hero.jpg');
+        background-size: cover;
+        background-position: center bottom 20px;
+
+        text-align: left;
+        padding-inline: 165px;
+        margin-bottom: 120px;
+
+        &__title {
+            font-size: 56px;
+            line-height: 58px;
+            letter-spacing: 2px;
+            width: 40%;
+        }
+
+        &__description {
+            width: 40%;
+        }
     }
 }
