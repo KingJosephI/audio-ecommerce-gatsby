@@ -10,24 +10,9 @@ export default function AudioGearSection() {
     <Stack className={styles.audioGear}>
       <Box className={styles.audioGear__imageContainer}>
         <picture>
-          <source
-            media="(min-width:1024px)"
-            srcSet={bestGearDesktop}
-            // width="540px"
-            // height="588px"
-          />
-          <source
-            media="(min-width:768px)"
-            srcSet={bestGearTablet}
-            // width="689px"
-            // height="300px"
-          />
-          <img
-            src={bestGearMobile}
-            alt="Audio Gear Section"
-            // width="327px"
-            // height="300px"
-          />
+          <source media="(min-width:1024px)" srcSet={bestGearDesktop} />
+          <source media="(min-width:768px)" srcSet={bestGearTablet} />
+          <img src={bestGearMobile} alt="Audio Gear Section" />
         </picture>
       </Box>
       <Box className={styles.audioGear__content}>

@@ -1,7 +1,4 @@
-@use "../../styles/global" as *;
-@use "../../styles/variables" as *;
-@use "../../styles/fonts" as *;
-
+@use "../../styles/base" as *;
 
 .audioGear {
   display: grid;
@@ -28,6 +25,7 @@
     text-transform: uppercase;
     font-size: 28px;
     font-weight: 700;
+    font-family: "Manrope", sans-serif;
 
     span {
       color: $orange;
@@ -43,12 +41,7 @@
   }
 }  
 
-@media screen and (width >= 768px){
-.audioGear {
-    // padding-inline: 40px;
-  }
-}
-  @media screen and (width >= 1024px){
+@media screen and (width >= 1024px){
   .audioGear {
     display: flex;
     flex-direction: row-reverse;
@@ -70,4 +63,4 @@
     &__content {
       width: 50%;
     }
-  }}
+}}

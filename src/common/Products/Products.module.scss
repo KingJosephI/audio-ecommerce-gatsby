@@ -1,0 +1,110 @@
+@use '../../styles/base' as *;
+
+.button { 
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: $black;
+  font-family: "Manrope", sans-serif;
+  border: 1px solid $black;
+  border-radius: 0;
+  padding: 19px 32px;
+  
+
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }     
+}
+
+.title {
+  text-transform: uppercase;
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding-block-end: 32px;
+}
+
+.products {
+  display: grid;
+  gap: 32px;
+
+  &__zX7Speaker{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 320px;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    background-image: url("../../assets/home/mobile/image-speaker-zx7.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 41px 25px;
+
+    &_button {
+      align-self: start;
+    }
+  }
+
+  &__third {
+    display: grid;
+    gap: 24px;
+
+    & > * {
+      border-radius: 12px;
+      overflow: hidden;
+    }
+  }
+
+  &__yx1Description{
+    padding: 41px 25px ;
+    background-color: $gray;
+  }
+
+  &__yx1ImageContainer {
+    background-color: $gray;
+  }
+}
+
+@media  screen and (width >= 768px) {
+.products {
+  &__third {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__zX7Speaker {
+    background-image: url("../../assets/home/tablet/image-speaker-zx7.jpg");
+    padding-inline: 64px;
+  }
+
+  &__yx1Description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 42px;
+
+    &_button {
+      align-self: flex-start;
+    }
+  }
+}
+}
+
+@media screen and (width >=1024px) {
+.products {
+  padding-inline: 165px;
+
+  &__yx1Description {
+    padding-inline: 96px;          
+  }
+
+     &__zX7Speaker {
+      padding: 100px 96px;
+       background-image: url("../../assets/home/desktop/image-speaker-zx7.jpg");
+     }
+}
+}
