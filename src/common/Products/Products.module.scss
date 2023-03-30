@@ -28,6 +28,7 @@
 
 .products {
   display: grid;
+  padding-inline: 24px;
   gap: 32px;
 
   &__zX9Speaker {
@@ -38,7 +39,7 @@
     min-height: clamp(560px, 600px, 720px);
     background-color: $orange;
     border-radius: 12px;
-   
+  
     text-align: center;
     padding-inline: 24px;
     font-family: "Manrope", sans-serif;

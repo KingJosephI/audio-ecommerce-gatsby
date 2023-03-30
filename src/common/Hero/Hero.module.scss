@@ -1,0 +1,70 @@
+@use "../../styles/base/" as *;
+
+.hero {
+    padding-inline: 24px;
+    // background-color: $black;
+    color: $white;
+    text-align: center;
+    padding: 180px 24px;
+    // padding-block: 180px;
+    margin-block-end: 40px;
+    background: url('../../assets/home/mobile/image-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top -170px center;
+    // background-attachment: local;
+    // width: 100%;
+
+    & > * {
+        font-family: "Manrope", sans-serif;
+    }
+
+    &__intro {
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 10px;
+        color: rgba($color: #fff, $alpha: 0.6);
+        
+    }
+
+    &__title {
+        font-size: 36px;
+        line-height: 40px;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-block-start: 16px;
+    }
+
+    &__description {
+        font-size: 15px;
+        line-height: 25px;
+        color: rgba($color: #fff, $alpha: 0.7);
+        padding-block: 24px 28px;
+    }
+    
+    &__button {
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        background-color: $orange;
+        border-radius: 0;
+        padding: 19px 32px;
+
+        &:hover {
+            background-color: $orange-light;
+        }
+    }
+
+}
+
+@media screen and (width >= 768px) {
+    .hero {
+        background: url('../../assets/home/tablet/image-header.jpg');
+        background-position: top center;
+    }
+}
+@media screen and (width >= 1024px) {
+    .hero {
+        background: url('../../assets/home/desktop/image-hero.jpg');
+    }
+}

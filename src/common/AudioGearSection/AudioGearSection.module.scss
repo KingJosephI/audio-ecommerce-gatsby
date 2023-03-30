@@ -4,9 +4,11 @@
   display: grid;
   gap: 40px;
   padding-block: 120px;
+  padding-inline: 24px;
   font-family: 'Manrope', sans-serif;
   letter-spacing: 1px;
   text-align: center;
+
 
   &__imageContainer {
     img {

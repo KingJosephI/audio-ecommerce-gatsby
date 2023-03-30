@@ -9,7 +9,17 @@ interface ILayout extends BoxProps {
 
 export default function Layout({ children }: ILayout) {
   return (
-    <Box sx={{ "& > *": { paddingInline: "24px" } }}>
+    <Box
+    // sx={{
+    //   "& > *:not(:first-child)": {
+    //     paddingInline: "24px",
+    //   },
+
+    //   "& > *:not(:nth-child(2))": {
+    //     paddingInline: "24px",
+    //   },
+    // }}
+    >
       <Header />
       {children}
       <Footer />
