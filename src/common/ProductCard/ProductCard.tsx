@@ -21,7 +21,7 @@ export default function ProductCard({
   imageDesktop = "",
   title = "",
   description = "",
-  newProductLabel = "NEW PRODUCT",
+  newProductLabel = "",
   goToUrl = "",
 }: IProductCard) {
   const [screenWidth, setScreenWidth] = React.useState(window.innerWidth);

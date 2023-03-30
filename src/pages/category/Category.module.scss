@@ -1,12 +1,6 @@
 @use '../../styles/base/' as *;
 
 
-// @media screen and (width >= 1024px) {
-//   .earphoneCard {
-//     display: flex;
-//     flex-direction: row;
-//   }
-// }
 @media screen and (width >=1024px){
   .cardContainer {
     padding-block: 165px;
@@ -71,7 +65,6 @@
 
 @media screen and (width >= 1024px) {
   .card {
-    // grid-auto-flow: row;
     display: flex;
     align-items: center;
     padding-inline: 165px;
