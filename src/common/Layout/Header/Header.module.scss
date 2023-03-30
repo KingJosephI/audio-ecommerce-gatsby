@@ -4,24 +4,20 @@
 .header {
   border-bottom-width: .5px ;
   border-bottom-style:  solid;
+  background-color: $blackish;
   border-bottom-color: rgba(255, 255, 255, 0.5);
-  background: url('../../../assets/home/mobile/image-header.jpg');
+  // background: url('../../../assets/home/mobile/image-header.jpg');
   
   nav {
     display: flex;
     justify-content: space-between;
     color: $white;
-    padding: 32px 24px;
-    
+    padding: 32px 24px;  
   }
 
   &__menu {
     display: none;
   }
-
-  
-
-
 }
 
 @media screen and (width >= 768px) {
@@ -50,7 +46,6 @@
     background: url('../../../assets/home/mobile/image-header.jpg');
 
     nav {
-      // display: flex;
       padding-inline: 165px;
       justify-content: space-between;
     }
@@ -67,26 +62,25 @@
       display: flex;
       gap: 34px;
       text-transform: uppercase;
-      // margin: 0 auto;
     }
 
     &__cart {
       margin-left: 0;
     }
 
-        &__menuItem {
-          &_text {
-            font-family: "Manrope", sans-serif;
-            font-size: 13px;
-            line-height: 25px;
-            letter-spacing: 2px;
-            font-weight: 700;
-            color: $white;
+    &__menuItem {
+      &_text {
+        font-family: "Manrope", sans-serif;
+        font-size: 13px;
+        line-height: 25px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        color: $white;
 
-            &:hover {
-              color: $orange;
-            }
-          }
+        &:hover {
+          color: $orange;
         }
+      }
+    }
   }
 }

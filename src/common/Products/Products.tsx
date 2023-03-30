@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { Box, Button, Typography } from "@mui/material";
 import { StaticImage } from "gatsby-plugin-image";
 import zx9Desktop from "../../assets/home/desktop/image-speaker-zx9.png";
