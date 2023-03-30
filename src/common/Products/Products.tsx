@@ -1,21 +1,16 @@
 import React from "react";
 import { Box, Button, Typography } from "@mui/material";
 import { StaticImage } from "gatsby-plugin-image";
-import * as styles from "./Products.module.scss";
 import zx9Desktop from "../../assets/home/desktop/image-speaker-zx9.png";
 import zx9Tablet from "../../assets/home/tablet/image-speaker-zx9.png";
 import zx9Mobile from "../../assets/home/mobile/image-speaker-zx9.png";
+import * as styles from "./Products.module.scss";
 
 export default function Products() {
   return (
     <Box className={styles.products}>
       <Box className={styles.products__zX9Speaker}>
         <Box className={styles.products__zX9Speaker_imageContainer}>
-          {/* <StaticImage
-            src={"../../assets/home/desktop/image-speaker-zx9.png"}
-            alt="ZX9 Speaker"
-            className={styles.products__zX9Speaker_image}
-          /> */}
           <picture>
             <source media="(min-width:1024px)" srcSet={zx9Desktop} />
             <source media="(min-width:768px)" srcSet={zx9Tablet} />
