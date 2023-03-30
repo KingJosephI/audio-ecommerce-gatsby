@@ -4,9 +4,9 @@
 .header {
   border-bottom-width: .5px ;
   border-bottom-style:  solid;
-  background-color: $blackish;
+  // background-color: $blackish;
   border-bottom-color: rgba(255, 255, 255, 0.5);
-  // background: url('../../../assets/home/mobile/image-header.jpg');
+  background: url('../../../assets/home/mobile/image-header.jpg');
   
   nav {
     display: flex;
@@ -24,7 +24,7 @@
 
 .header {
   background: url('../../../assets/home/mobile/image-header.jpg');
-  
+  background-color: $blackish;
   nav {
     display: flex;
     padding-inline: 40px;
