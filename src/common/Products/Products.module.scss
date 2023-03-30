@@ -30,6 +30,66 @@
   display: grid;
   gap: 32px;
 
+  &__zX9Speaker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: clamp(560px, 600px, 720px);
+    background-color: $orange;
+    border-radius: 12px;
+   
+    text-align: center;
+    padding-inline: 24px;
+    font-family: "Manrope", sans-serif;
+    background-image: url('../../assets/home/desktop/pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+
+    &_image {
+      width:  172.5px;
+    }
+
+    &_content {
+      display: grid;
+      gap: 24px;
+    }
+
+    &_imageContainer {
+      margin-block-end: 32px;
+    }
+
+    &_title {
+      font-size: 36px;
+      line-height: 25px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: "Manrope", sans-serif;
+      color: $white;
+    }
+
+    &_description {
+      font-family: "Manrope", sans-serif;
+      color: rgba($color: #fff, $alpha: 0.75);
+      font-size: 15px;
+      line-height: 25px;
+      font-weight: 500;
+    }
+
+    &_button {
+      background-color: $black;
+      color: $white;
+      justify-self: center;
+
+      &:hover {
+        background-color: #4C4C4C;
+        border-color: #4C4C4C;
+      }
+    }
+
+  }
+
   &__zX7Speaker{   
     display: flex;
     flex-direction: column;
@@ -49,7 +109,7 @@
     }
   }
 
-  &__third {
+  &__yx1Earphones {
     display: grid;
     gap: 24px;
 
@@ -71,7 +131,7 @@
 
 @media  screen and (width >= 768px) {
 .products {
-  &__third {
+  &__yx1Earphones {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -98,13 +158,44 @@
 .products {
   padding-inline: 165px;
 
+  &__zX9Speaker {
+    flex-direction: row;
+    justify-content: start;
+    gap: 138px;
+    padding-inline: 96px;
+    overflow: hidden;
+
+    &_imageContainer {
+      margin-bottom: -150px;
+    }
+
+    &_image {
+      width: 411px;
+    }
+
+    &_title {
+      font-size: 56px;
+      line-height: 58px;
+      letter-spacing: 2px;
+      width: 50%;
+    }
+
+    &_button {
+      justify-self: flex-start;
+    }
+
+    &_content {
+      text-align: left;
+    }
+  }
+
   &__yx1Description {
     padding-inline: 96px;          
   }
 
-     &__zX7Speaker {
-      padding: 100px 96px;
-       background-image: url("../../assets/home/desktop/image-speaker-zx7.jpg");
-     }
+  &__zX7Speaker {
+    padding: 100px 96px;
+    background-image: url("../../assets/home/desktop/image-speaker-zx7.jpg");
+  }
 }
 }
