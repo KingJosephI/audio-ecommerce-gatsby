@@ -1,15 +1,20 @@
 import * as React from "react";
-import { Layout, Products, AudioGearSection } from "../index";
+import { Layout, AudioGearSection, Categories, Banner } from "../index";
 
 interface IProductCategory {
   children?: React.ReactNode;
+  title: string;
 }
 
-export default function ProductCategoryLayout({ children }: IProductCategory) {
+export default function ProductCategoryLayout({
+  title,
+  children,
+}: IProductCategory) {
   return (
     <Layout>
+      <Banner title={title} />
       {children}
-      <Products />
+      <Categories />
       <AudioGearSection />
     </Layout>
   );
