@@ -46,32 +46,6 @@ export default function RelatedProducts() {
           }}
         />
       </Box>
-      {/* <Box>
-        <Box>
-          <picture>
-            <source media="(min-width:1024px)" srcSet={xx99M1D} />
-            <source media="(min-width:768px)" srcSet={xx99M1T} />
-            <img src={xx99M1M} alt="" />
-          </picture>
-        </Box>
-        <Box>
-          <Typography component="h3">XX99 MARK I</Typography>
-          <Button variant="contained">See product</Button>
-        </Box>
-      </Box>
-      <Box>
-        <Box>
-          <picture>
-            <source media="(min-width:1024px)" srcSet={xx59M} />
-            <source media="(min-width:768px)" srcSet={xx59T} />
-            <img src={xx59D} alt="" />
-          </picture>
-        </Box>
-        <Box>
-          <Typography component="h3">XX59</Typography>
-          <Button variant="contained">See product</Button>
-        </Box>
-      </Box> */}
     </Box>
   );
 }
