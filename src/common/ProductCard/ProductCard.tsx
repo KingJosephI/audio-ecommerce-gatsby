@@ -1,11 +1,9 @@
 import * as React from "react";
-import { Box, Button, Stack, StackProps, Typography } from "@mui/material";
-// import { Box } from "@mui/system";
-// import { StaticImage } from "gatsby-plugin-image";
+import { Box, Button, BoxProps, Typography } from "@mui/material";
 import { Link } from "gatsby";
 import * as styles from "./ProductCard.module.scss";
 
-interface IProductCard extends StackProps {
+interface IProductCard extends BoxProps {
   imageMobile?: string;
   imageTablet?: string;
   imageDesktop?: string;
@@ -13,6 +11,7 @@ interface IProductCard extends StackProps {
   description: string;
   newProductLabel?: string;
   goToUrl: string;
+  sx?: object;
 }
 
 export default function ProductCard({
@@ -23,20 +22,10 @@ export default function ProductCard({
   description = "",
   newProductLabel = "",
   goToUrl = "",
+  sx,
 }: IProductCard) {
-  const [screenWidth, setScreenWidth] = React.useState(window.innerWidth);
-
-  React.useEffect(() => {
-    window.addEventListener("resize", () => {
-      setScreenWidth(window.innerWidth);
-      // console.log(screenWidth);
-    });
-  }, [window.innerWidth]);
   return (
-    <Stack
-      className={styles.card}
-      direction={screenWidth >= 1024 ? "row" : "column"}
-    >
+    <Box className={styles.card} sx={sx}>
       <Box className={styles.card__imageContainer}>
         <picture>
           <source media="(min-width:1024px)" srcSet={imageDesktop} />
@@ -64,6 +53,6 @@ export default function ProductCard({
           </Button>
         </Link>
       </Box>
-    </Stack>
+    </Box>
   );
 }

@@ -1,66 +1,26 @@
 import * as React from "react";
-import { Box, Button, Stack, Typography } from "@mui/material";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import { StaticImage } from "gatsby-plugin-image";
+import { Stack } from "@mui/material";
+import Category from "./Category/Category";
+import headphones from "../../assets/shared/desktop/image-category-thumbnail-headphones.png";
+import speakers from "../../assets/shared/desktop/image-category-thumbnail-speakers.png";
+import earphones from "../../assets/shared/desktop/image-category-thumbnail-earphones.png";
 import * as styles from "./Categories.module.scss";
 
 export default function Categories() {
   return (
     <Stack className={styles.categories}>
-      <Box className={styles.category}>
-        <StaticImage
-          src="../../assets/shared/desktop/image-category-thumbnail-headphones.png"
-          alt="Headphones"
-          className={styles.category__image}
-        />
-        <Typography className={styles.category__title}>Headphones</Typography>
-        <Button
-          className={styles.category__shopButton}
-          variant="text"
-          endIcon={
-            <ChevronRightIcon className={styles.category__chevronIcon} />
-          }
-        >
-          Shop
-        </Button>
-      </Box>
+      <Category
+        title="Headphones"
+        image={headphones}
+        goTo="/category/headphones"
+      />
+      <Category title="Speakers" image={speakers} goTo="/category/speakers" />
 
-      <Box className={styles.category}>
-        <StaticImage
-          src="../../assets/shared/desktop/image-category-thumbnail-speakers.png"
-          alt="Speakers"
-          className={styles.category__image}
-        />
-
-        <Typography className={styles.category__title}>Speakers</Typography>
-        <Button
-          className={styles.category__shopButton}
-          variant="text"
-          endIcon={
-            <ChevronRightIcon className={styles.category__chevronIcon} />
-          }
-        >
-          Shop
-        </Button>
-      </Box>
-      <Box className={styles.category}>
-        <StaticImage
-          src="../../assets/shared/desktop/image-category-thumbnail-earphones.png"
-          alt="Earphones"
-          className={styles.category__image}
-        />
-
-        <Typography className={styles.category__title}>Earphones</Typography>
-        <Button
-          className={styles.category__shopButton}
-          variant="text"
-          endIcon={
-            <ChevronRightIcon className={styles.category__chevronIcon} />
-          }
-        >
-          Shop
-        </Button>
-      </Box>
+      <Category
+        title="Earphones"
+        image={earphones}
+        goTo="/category/earphones"
+      />
     </Stack>
   );
 }

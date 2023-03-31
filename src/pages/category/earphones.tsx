@@ -16,7 +16,7 @@ export default function Earphones() {
   return (
     <Layout>
       <Banner title="Earphones" />
-      <Box className={styles.cardContainer}>
+      <Box className={styles.earphoneContainer}>
         <ProductCard
           imageMobile={yx1EarphoneMobile}
           imageTablet={yx1EarphoneTablet}

@@ -1,83 +1,15 @@
 @use '../../styles/base/' as *;
 
 
-@media screen and (width >=1024px){
-  .cardContainer {
-    padding-block: 165px;
-  }
-}
-
-.card {
+.headphonesContainer, .speakersContainer {
   display: grid;
-  gap: 32px;
-  padding-inline: 24px;
-  text-align: center;
-
-  & * {
-    font-family: "Manrope", sans-serif;
-  }
-
-  &__details {
-    display: grid;
-    gap: 24px;
-    justify-items: center;
-  }
-
-  &__newProductLabel {
-    color: $orange;
-    font-size: 14px;
-    letter-spacing: 10px;
-  }
-
-  &__title {
-    font-size: 28px;
-    letter-spacing: 1px;
-    font-weight: 700;
-    width: 80%;
-    text-align: center;
-  }
-
-  &__description {
-    color: rgba($color: #000000, $alpha: 0.6);
-  }
-
-  &__imageContainer {
-    border-radius: 12px;
-    overflow: hidden;
-  }
-
-  &__button {
-    font-size: 13px;
-    letter-spacing: 1px;
-    font-weight: 700;
-    background-color: $orange;
-    border-radius: 0;
-    padding: 19px 32px;
-    box-shadow: none;
-
-    &:hover {
-      background-color: $orange-light;
-      box-shadow: none;
-    }
-  }
+  gap: 120px;
+  padding-block: 120px;
 }
 
 
-@media screen and (width >= 1024px) {
-  .card {
-    display: flex;
-    align-items: center;
-    padding-inline: 165px;
-    gap: 125px;
-
-    &__details {
-      justify-items: start;
-      text-align: left;
-    }
-
-    &__title {
-      width: 100%;
-      text-align: left;
-    }
+@media screen and (width >=1024px){
+  .earphoneContainer {
+    padding-block: 165px;
   }
 }
