@@ -23,13 +23,13 @@ export default function Footer() {
           <Link to="/">Home</Link>
         </Typography>
         <Typography component="li" className={styles.footer__linksItem}>
-          <Link to="/speakers">Speakers</Link>
+          <Link to="/category/speakers">Speakers</Link>
         </Typography>
         <Typography component="li" className={styles.footer__linksItem}>
-          <Link to="/headphones">Headphones</Link>
+          <Link to="/category/headphones">Headphones</Link>
         </Typography>
         <Typography component="li" className={styles.footer__linksItem}>
-          <Link to="/earphones">Earphones</Link>
+          <Link to="/category/earphones">Earphones</Link>
         </Typography>
       </Stack>
       <Typography component="p" className={styles.footer__description}>

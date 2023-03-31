@@ -1,6 +1,11 @@
 import * as React from "react";
 import { Box, Typography } from "@mui/material";
-import { ProductCategoryLayout, RelatedProducts } from "../../../common";
+import {
+  Gallery,
+  ProductCardPriced,
+  ProductCategoryLayout,
+  RelatedProducts,
+} from "../../../common";
 import * as styles from "../Category.module.scss";
 import gal1D from "../../../assets/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg";
 import gal2D from "../../../assets/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg";
@@ -11,35 +16,32 @@ import gal3T from "../../../assets/product-xx99-mark-two-headphones/tablet/image
 import gal1M from "../../../assets/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg";
 import gal2M from "../../../assets/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg";
 import gal3M from "../../../assets/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg";
+import productImageD from "../../../assets/product-xx99-mark-two-headphones/desktop/image-product.jpg";
+import productImageT from "../../../assets/product-xx99-mark-two-headphones/tablet/image-product.jpg";
+import productImageM from "../../../assets/product-xx99-mark-two-headphones/mobile/image-product.jpg";
 
 export default function XX99One() {
+  const images = [
+    { desktop: gal1D, tablet: gal1T, mobile: gal1M },
+    { desktop: gal2D, tablet: gal2T, mobile: gal2M },
+    { desktop: gal3D, tablet: gal3T, mobile: gal3M },
+  ];
   return (
     <ProductCategoryLayout>
       <Typography>Go back</Typography>
-      <h1>XX99 Two</h1>
-      <Box className={styles.gallery}>
-        <Box className={styles.gallery__pic1}>
-          <picture>
-            <source media="(min-width:1024px)" srcSet={gal1D} />
-            <source media="(min-width:768px)" srcSet={gal1T} />
-            <img src={gal1M} alt="" />
-          </picture>
-        </Box>
-        <Box className={styles.gallery__pic2}>
-          <picture>
-            <source media="(min-width:1024px)" srcSet={gal2D} />
-            <source media="(min-width:768px)" srcSet={gal2T} />
-            <img src={gal2M} alt="" />
-          </picture>
-        </Box>
-        <Box className={styles.gallery__pic3}>
-          <picture>
-            <source media="(min-width:1024px)" srcSet={gal3D} />
-            <source media="(min-width:768px)" srcSet={gal3T} />
-            <img src={gal3M} alt="" />
-          </picture>
-        </Box>
-      </Box>
+      <ProductCardPriced
+        image={{
+          mobile: productImageM,
+          tablet: productImageT,
+          desktop: productImageD,
+        }}
+        title="XX99 Mark II Headphones"
+        description="The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound."
+        price={2.999}
+        goToUrl="#"
+        newProductLabel="NEW PRODUCT"
+      />
+      <Gallery images={images} />
       <RelatedProducts />
     </ProductCategoryLayout>
   );

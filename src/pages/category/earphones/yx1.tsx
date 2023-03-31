@@ -1,4 +1,9 @@
-import { ProductCategoryLayout, RelatedProducts } from "../../../common";
+import {
+  Gallery,
+  ProductCardPriced,
+  ProductCategoryLayout,
+  RelatedProducts,
+} from "../../../common";
 import * as React from "react";
 import { Box, Typography } from "@mui/material";
 import gal1D from "../../../assets/product-yx1-earphones/desktop/image-gallery-1.jpg";
@@ -11,36 +16,33 @@ import gal1M from "../../../assets/product-yx1-earphones/mobile/image-gallery-1.
 import gal2M from "../../../assets/product-yx1-earphones/mobile/image-gallery-2.jpg";
 import gal3M from "../../../assets/product-yx1-earphones/mobile/image-gallery-3.jpg";
 
+import productImageD from "../../../assets/product-yx1-earphones/desktop/image-product.jpg";
+import productImageT from "../../../assets/product-yx1-earphones/tablet/image-product.jpg";
+import productImageM from "../../../assets/product-yx1-earphones/mobile/image-product.jpg";
 import * as styles from "../Category.module.scss";
 
 export default function yx1() {
+  const images = [
+    { desktop: gal1D, tablet: gal1T, mobile: gal1M },
+    { desktop: gal2D, tablet: gal2T, mobile: gal2M },
+    { desktop: gal3D, tablet: gal3T, mobile: gal3M },
+  ];
   return (
     <ProductCategoryLayout>
       <Typography>Go back</Typography>
-      <h1>YX1</h1>
-      <Box className={styles.gallery}>
-        <Box className={styles.gallery__pic1}>
-          <picture>
-            <source media="(min-width:1024px)" srcSet={gal1D} />
-            <source media="(min-width:768px)" srcSet={gal1T} />
-            <img src={gal1M} alt="" />
-          </picture>
-        </Box>
-        <Box className={styles.gallery__pic2}>
-          <picture>
-            <source media="(min-width:1024px)" srcSet={gal2D} />
-            <source media="(min-width:768px)" srcSet={gal2T} />
-            <img src={gal2M} alt="" />
-          </picture>
-        </Box>
-        <Box className={styles.gallery__pic3}>
-          <picture>
-            <source media="(min-width:1024px)" srcSet={gal3D} />
-            <source media="(min-width:768px)" srcSet={gal3T} />
-            <img src={gal3M} alt="" />
-          </picture>
-        </Box>
-      </Box>
+      <ProductCardPriced
+        title="YX1 WIRELESS EARPHONES"
+        description="Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature."
+        price={599}
+        image={{
+          mobile: productImageM,
+          tablet: productImageT,
+          desktop: productImageD,
+        }}
+        goToUrl="#"
+        newProductLabel="NEW PRODUCT"
+      />
+      <Gallery images={images} />
       <RelatedProducts />
     </ProductCategoryLayout>
   );

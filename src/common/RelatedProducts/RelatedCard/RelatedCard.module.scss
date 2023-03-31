@@ -2,7 +2,7 @@
 
 .card {
   text-align: center;
-  
+
   &__image {
     border-radius: 8px;
     overflow: hidden;
@@ -13,6 +13,7 @@
     font-weight: 700;
     letter-spacing: 1.71px;
     padding-block: 32px;
+    text-transform: uppercase;
   }
 
   &__button {
