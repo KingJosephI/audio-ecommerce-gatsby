@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Box } from "@mui/system";
-import { ProductCard, ProductCategoryLayout } from "../../../common";
+import { Banner, ProductCard, ProductCategoryLayout } from "../../../common";
 import xx59Desktop from "../../../assets/product-xx59-headphones/desktop/image-product.jpg";
 import xx59Tablet from "../../../assets/product-xx59-headphones/tablet/image-product.jpg";
 import xx59Mobile from "../../../assets/product-xx59-headphones/mobile/image-product.jpg";
@@ -32,7 +32,7 @@ export default function Earphones() {
         tablet: xx992Tablet,
         desktop: xx992Desktop,
       },
-      url: "/xx99-two",
+      url: "/category/headphones/xx99Two",
     },
     {
       title: "XX99 Mark I Headphones",
@@ -43,7 +43,7 @@ export default function Earphones() {
         tablet: xx991Tablet,
         desktop: xx991Desktop,
       },
-      url: "/xx99-one",
+      url: "/category/headphones/xx99One",
     },
     {
       title: "XX59 Headphones",
@@ -54,12 +54,13 @@ export default function Earphones() {
         tablet: xx59Tablet,
         desktop: xx59Desktop,
       },
-      url: "/xx59",
+      url: "/category/headphones/xx59",
     },
   ];
 
   return (
-    <ProductCategoryLayout title="Headphones">
+    <ProductCategoryLayout>
+      <Banner title="Headphones" />
       <Box className={styles.headphonesContainer}>
         <ProductCard
           imageMobile={headphones[0].image.mobile}

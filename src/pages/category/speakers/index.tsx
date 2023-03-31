@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Box } from "@mui/material";
-import { ProductCard, ProductCategoryLayout } from "../../../common";
+import { Banner, ProductCard, ProductCategoryLayout } from "../../../common";
 import zx7Desktop from "../../../assets/product-zx7-speaker/desktop/image-product.jpg";
 import zx7Tablet from "../../../assets/product-zx7-speaker/tablet/image-product.jpg";
 import zx7Mobile from "../../../assets/product-zx7-speaker/mobile/image-product.jpg";
@@ -24,19 +24,20 @@ export default function Earphones() {
       description:
         "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.",
       image: { mobile: zx9Desktop, tablet: zx9Tablet, desktop: zx9Mobile },
-      url: "/zx9",
+      url: "/category/speakers/zx9",
     },
     {
       title: "ZX7 SPEAKER",
       description:
         "Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.",
       image: { mobile: zx7Mobile, tablet: zx7Tablet, desktop: zx7Desktop },
-      url: "/zx7",
+      url: "/category/speakers/zx7",
     },
   ];
 
   return (
-    <ProductCategoryLayout title="Speakers">
+    <ProductCategoryLayout>
+      <Banner title="Speakers" />
       <Box className={styles.speakersContainer}>
         <ProductCard
           imageMobile={speakers[0].image.mobile}

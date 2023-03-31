@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Box } from "@mui/material";
-import { ProductCard, ProductCategoryLayout } from "../../../common";
+import { Banner, ProductCard, ProductCategoryLayout } from "../../../common";
 import yx1EarphoneMobile from "../../../assets/product-yx1-earphones/mobile/image-category-page-preview.jpg";
 import yx1EarphoneTablet from "../../../assets/product-yx1-earphones/tablet/image-category-page-preview.jpg";
 import yx1EarphoneDesktop from "../../../assets/product-yx1-earphones/desktop/image-category-page-preview.jpg";
@@ -19,12 +19,13 @@ export default function Earphones() {
         tablet: yx1EarphoneTablet,
         desktop: yx1EarphoneDesktop,
       },
-      url: "/yx1",
+      url: "/category/earphones/yx1",
     },
   ];
 
   return (
-    <ProductCategoryLayout title="Earphones">
+    <ProductCategoryLayout>
+      <Banner title="Earphones" />
       <Box className={styles.earphoneContainer}>
         <ProductCard
           imageMobile={earphones[0].image.mobile}
