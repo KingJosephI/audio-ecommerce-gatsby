@@ -6,3 +6,4 @@ export { default as Products } from "./Products/Products";
 export { default as ProductCategoryLayout } from "./ProductCategoryLayout/ProductCategoryLayout";
 export { default as Banner } from "./Banner/Banner";
 export { default as ProductCard } from "./ProductCard/ProductCard";
+export { default as RelatedProducts } from "./RelatedProducts/RelatedProducts";

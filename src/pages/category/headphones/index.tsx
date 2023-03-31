@@ -1,20 +1,17 @@
 import * as React from "react";
-import { Box } from "@mui/system";
+import { Box } from "@mui/material";
 import { Banner, ProductCard, ProductCategoryLayout } from "../../../common";
 import xx59Desktop from "../../../assets/product-xx59-headphones/desktop/image-product.jpg";
 import xx59Tablet from "../../../assets/product-xx59-headphones/tablet/image-product.jpg";
 import xx59Mobile from "../../../assets/product-xx59-headphones/mobile/image-product.jpg";
-
 import xx991Desktop from "../../../assets/product-xx99-mark-one-headphones/desktop/image-product.jpg";
 import xx991Tablet from "../../../assets/product-xx99-mark-one-headphones/tablet/image-product.jpg";
 import xx991Mobile from "../../../assets/product-xx99-mark-one-headphones/mobile/image-product.jpg";
-
 import xx992Desktop from "../../../assets/product-xx99-mark-two-headphones/desktop/image-product.jpg";
 import xx992Tablet from "../../../assets/product-xx99-mark-two-headphones/tablet/image-product.jpg";
 import xx992Mobile from "../../../assets/product-xx99-mark-two-headphones/mobile/image-product.jpg";
-
-import * as styles from "../Category.module.scss";
 import useWindowWidth from "../../../hooks/useWindowWidth";
+import * as styles from "../Category.module.scss";
 
 export default function Earphones() {
   const screenWidth = useWindowWidth();

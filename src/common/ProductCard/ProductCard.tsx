@@ -1,6 +1,6 @@
 import * as React from "react";
-import { Box, Button, BoxProps, Typography } from "@mui/material";
 import { Link } from "gatsby";
+import { Box, Button, BoxProps, Typography } from "@mui/material";
 import * as styles from "./ProductCard.module.scss";
 
 interface IProductCard extends BoxProps {

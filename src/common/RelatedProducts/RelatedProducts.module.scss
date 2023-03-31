@@ -1,0 +1,85 @@
+@use "../../styles/base/" as *;
+
+.relatedProducts {
+  padding: 120px 24px;
+
+  & * {
+    font-family: "Manrope", sans-serif;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.86px;
+    font-weight: 700;
+    padding-bottom: 40px;
+  }
+
+  &__card__container {
+    display: grid;
+    gap: 56px;
+  }
+
+  // &__card {
+  //   text-align: center;
+
+
+
+  //   &__image {
+  //     border-radius: 8px;
+  //     overflow: hidden;
+  //   }
+
+  //   &__title {
+  //     font-size: 24px;
+  //     font-weight: 700;
+  //     letter-spacing: 1.71px;
+  //     padding-block: 32px;
+  //   }
+
+  //   &__button {
+  //     font-size: 13px;
+  //     letter-spacing: 1px;
+  //     font-weight: 700;
+  //     background-color: $orange;
+  //     border-radius: 0;
+  //     padding: 19px 32px;
+  //     box-shadow: none;
+  
+  //     &:hover {
+  //       background-color: $orange-light;
+  //       box-shadow: none;
+  //     }
+  //   }
+  // }
+
+    
+}
+
+@media screen and (width >=1024px) {
+.relatedProducts {
+  padding-inline: 165px;
+
+  &__title {
+    padding-bottom: 64px;
+  }
+}
+}
+
+@media screen and (width >=768px) {
+.relatedProducts {
+  &__title {
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 1.14px;
+    padding-bottom: 56px;
+  }
+
+  &__card__container {
+    display: flex;
+    gap: 32px;
+  }
+}
+}

@@ -1,0 +1,32 @@
+@use '../../../styles/base/' as *;
+
+.card {
+  text-align: center;
+  
+  &__image {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.71px;
+    padding-block: 32px;
+  }
+
+  &__button {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    background-color: $orange;
+    border-radius: 0;
+    padding: 19px 32px;
+    box-shadow: none;
+
+    &:hover {
+      background-color: $orange-light;
+      box-shadow: none;
+    }
+  }
+}

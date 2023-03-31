@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Box } from "@mui/material";
 import { Banner, ProductCard, ProductCategoryLayout } from "../../../common";
+
 import zx7Desktop from "../../../assets/product-zx7-speaker/desktop/image-product.jpg";
 import zx7Tablet from "../../../assets/product-zx7-speaker/tablet/image-product.jpg";
 import zx7Mobile from "../../../assets/product-zx7-speaker/mobile/image-product.jpg";
@@ -10,6 +11,7 @@ import zx9Tablet from "../../../assets/product-zx9-speaker/tablet/image-product.
 import zx9Mobile from "../../../assets/product-zx9-speaker/mobile/image-product.jpg";
 
 import useWindowWidth from "../../../hooks/useWindowWidth";
+
 import * as styles from "../Category.module.scss";
 
 export default function Earphones() {
