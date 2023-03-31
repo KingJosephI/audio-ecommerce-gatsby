@@ -14,13 +14,10 @@ import xx992Tablet from "../../../assets/product-xx99-mark-two-headphones/tablet
 import xx992Mobile from "../../../assets/product-xx99-mark-two-headphones/mobile/image-product.jpg";
 
 import * as styles from "../Category.module.scss";
+import useWindowWidth from "../../../hooks/useWindowWidth";
 
 export default function Earphones() {
-  const [screenWidth, setScreenWidth] = React.useState(window.innerWidth);
-
-  React.useEffect(() => {
-    setScreenWidth(window.innerWidth);
-  }, [window.innerWidth]);
+  const screenWidth = useWindowWidth();
 
   const headphones = [
     {

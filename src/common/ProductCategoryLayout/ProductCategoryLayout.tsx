@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Layout, AudioGearSection, Categories, Banner } from "../index";
+import { Layout, AudioGearSection, Categories } from "../index";
 
 interface IProductCategory {
   children?: React.ReactNode;
@@ -8,7 +8,6 @@ interface IProductCategory {
 export default function ProductCategoryLayout({ children }: IProductCategory) {
   return (
     <Layout>
-      {/* <Banner title={title} /> */}
       {children}
       <Categories />
       <AudioGearSection />

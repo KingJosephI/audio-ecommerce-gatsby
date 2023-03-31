@@ -9,14 +9,11 @@ import zx9Desktop from "../../../assets/product-zx9-speaker/desktop/image-produc
 import zx9Tablet from "../../../assets/product-zx9-speaker/tablet/image-product.jpg";
 import zx9Mobile from "../../../assets/product-zx9-speaker/mobile/image-product.jpg";
 
+import useWindowWidth from "../../../hooks/useWindowWidth";
 import * as styles from "../Category.module.scss";
 
 export default function Earphones() {
-  const [screenWidth, setScreenWidth] = React.useState(window.innerWidth);
-
-  React.useEffect(() => {
-    setScreenWidth(window.innerWidth);
-  }, [window.innerWidth]);
+  const screenWidth = useWindowWidth();
 
   const speakers = [
     {
