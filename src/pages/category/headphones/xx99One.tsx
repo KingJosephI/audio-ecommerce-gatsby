@@ -2,6 +2,7 @@ import * as React from "react";
 import { Box, Typography } from "@mui/material";
 import {
   Gallery,
+  Goback,
   ProductCardPriced,
   ProductCategoryLayout,
   RelatedProducts,
@@ -28,7 +29,7 @@ export default function Xx99One() {
   ];
   return (
     <ProductCategoryLayout>
-      <Typography>Go back</Typography>
+      <Goback />
       <ProductCardPriced
         title="XX99 Mark I Headphones"
         description="As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go. "

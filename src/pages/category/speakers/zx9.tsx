@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Gallery,
+  Goback,
   ProductCardPriced,
   ProductCategoryLayout,
   RelatedProducts,
@@ -30,7 +31,8 @@ export default function Xx99One() {
   ];
   return (
     <ProductCategoryLayout>
-      <Typography>Go back</Typography>
+      <Goback />
+
       <ProductCardPriced
         title="ZX9 SPEAKER"
         description="Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups."

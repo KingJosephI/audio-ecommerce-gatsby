@@ -2,6 +2,7 @@ import * as React from "react";
 import { Box, Typography } from "@mui/material";
 import {
   Gallery,
+  Goback,
   ProductCardPriced,
   ProductCategoryLayout,
   RelatedProducts,
@@ -28,7 +29,7 @@ export default function XX99One() {
   ];
   return (
     <ProductCategoryLayout>
-      <Typography>Go back</Typography>
+      <Goback />
       <ProductCardPriced
         image={{
           mobile: productImageM,

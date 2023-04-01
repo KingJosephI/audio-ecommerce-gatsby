@@ -1,6 +1,7 @@
 import * as React from "react";
 import {
   Gallery,
+  Goback,
   ProductCardPriced,
   ProductCategoryLayout,
   RelatedProducts,
@@ -30,7 +31,7 @@ export default function Xx99One() {
   ];
   return (
     <ProductCategoryLayout>
-      <Typography>Go back</Typography>
+      <Goback />
       <ProductCardPriced
         title="ZX7 SPEAKER"
         description="Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use."

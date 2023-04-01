@@ -9,3 +9,4 @@ export { default as ProductCard } from "./ProductCard/ProductCard";
 export { default as ProductCardPriced } from "./ProductCardPriced/ProductCardPriced";
 export { default as RelatedProducts } from "./RelatedProducts/RelatedProducts";
 export { default as Gallery } from "./Gallery/Gallery";
+export { default as Goback } from "./Goback/Goback";
