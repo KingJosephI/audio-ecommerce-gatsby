@@ -6,7 +6,6 @@ import {
   RelatedProducts,
 } from "../../../common";
 import * as React from "react";
-import { Box, Typography } from "@mui/material";
 import gal1D from "../../../assets/product-yx1-earphones/desktop/image-gallery-1.jpg";
 import gal2D from "../../../assets/product-yx1-earphones/desktop/image-gallery-2.jpg";
 import gal3D from "../../../assets/product-yx1-earphones/desktop/image-gallery-3.jpg";
@@ -28,6 +27,7 @@ export default function yx1() {
     { desktop: gal2D, tablet: gal2T, mobile: gal2M },
     { desktop: gal3D, tablet: gal3T, mobile: gal3M },
   ];
+
   return (
     <ProductCategoryLayout>
       <Goback />
